@@ -1,0 +1,104 @@
+nav {
+  border: 1px solid orange;
+}
+
+div {
+  border: 1px solid blue;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* to specify Open Sans use this property:
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v6/y6oxFxU60dYw9khW6q8jGw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* to specify Monoton use this property:
+font-family: 'Monoton', cursive;
+*/
+
+
+navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+navbar ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navbar-default .navbar-nav > .active > a .navbar-default .navbar-nav > .active > a
+ {
+  background-color: yellow;
+  }
+
+
+
+@media only screen and (max-width: 480px){
+ nav img {
+   display: none;
+ }
+}
+
+
+
+.jumbotron.jumbotron-bike {
+  background-image: url("/resources/images/jumbotron-bike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat center center;
+  height: auto;
+  width: 100%;
+}
+
+.jumbotron.jumbotron-bike p {
+  text-shadow: 1px 1px 1px black;
+}
