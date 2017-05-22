@@ -49,16 +49,14 @@ font-family: 'Open Sans', sans-serif;
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-.container-fluid {
-  background-color: white;
-}
+
 
 /* to specify Monoton use this property:
 font-family: 'Monoton', cursive;
 */
 
 /* Begin Navigation Section */
-navbar {
+.navbar {
   position: fixed;
   display: flex;
   width: 100%;
@@ -66,29 +64,35 @@ navbar {
 
 }
 
-navbar .container-fluid {
+.navbar .container-fluid {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   width: 100%;
   z-index: 50;
   background-color: white;
 }
 
-navbar .container {
+.navbar .container {
   display: flex;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
-navbar ul {
+.navbar ul {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-navbar .navbar-default .navbar-nav > .active > a:hover {
+.navbar a {
+  font-family: 'Open Sans';
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-default .navbar-nav > .active > a:hover {
   background-color: red;
   }
 
@@ -113,12 +117,9 @@ navbar .navbar-default .navbar-nav > .active > a:hover {
 }
 
 .jumbotron.jumbotron-bike {
-  background-image: url("resources/images/jumbotron-bike.jpg");
+  background-image: url("../images/jumbotron-bike.jpg");
   background-size: cover;
-  background-repeat: no-repeat center center;
-  height: 100%;
-  width: 100%;
-  background-color: orange;
+  background-repeat: no-repeat;
 }
 
 .jumbotron.jumbotron-bike .container-fluid {
@@ -129,7 +130,7 @@ navbar .navbar-default .navbar-nav > .active > a:hover {
   text-shadow: 1px 1px 1px black;
 }
 
-.banner .quote {
+.banner.container .quote {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -148,8 +149,79 @@ navbar .navbar-default .navbar-nav > .active > a:hover {
 
 /* End Banner Section */
 
-/* projects section*/
+/*Projects Containter Begins*/
+.projects.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-.image-container img {
-  opacity: 0.7;
+
+/* Featured projects section Begins*/
+
+
+
+.featured.project {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1.43rem;
+}
+
+.featured.project img {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4rem;
+  color: rgba(0,0,0,0.7);
+  justify-content: flex-start;
+}
+
+.info img {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Featured Projects Section Ends */
+
+/*Projects Projects Section Begigns*/
+.three.projects.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5.85rem;
+}
+
+
+
+
+/*Projects Projects Section Ends*/
+/*Projects Sectoin Ends */
+
+
+/*Footer Section Begins*/
+
+.footer.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #f3f3f3;
+  height: 14.4rem;
+}
+
+.footer .quote {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+width: 51.3rem;
 }
