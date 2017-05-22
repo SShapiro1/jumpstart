@@ -108,23 +108,28 @@ font-family: 'Monoton', cursive;
 
 /* Begin Banner Section */
 
-.banner {
+/*.banner.container {
   display: flex;
   height: 70rem;
   width: 100%;
   align-items: center;
   justify-content: center;
-}
+  padding: 0;
+}*/
 
-.jumbotron.jumbotron-bike {
+.jumbotron.jumbotron-bike.container {
   background-image: url("../images/jumbotron-bike.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
 }
 
-.jumbotron.jumbotron-bike .container-fluid {
-  margin-top: 2rem;
-}
 
 .jumbotron.jumbotron-bike p {
   text-shadow: 1px 1px 1px black;
