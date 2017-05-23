@@ -4,13 +4,13 @@
 
 }
 
-nav {
+/*nav {
   border: 1px solid orange;
 }
 
 div {
   border: 1px solid blue;
-}
+}*/
 
 @font-face {
   font-family: 'Open Sans';
@@ -65,9 +65,6 @@ font-family: 'Monoton', cursive;
 }
 
 .navbar .container-fluid {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   width: 100%;
   z-index: 50;
   background-color: white;
@@ -86,7 +83,7 @@ font-family: 'Monoton', cursive;
   flex-direction: row;
 }
 
-.navbar a {
+.navbar ul li {
   font-family: 'Open Sans';
   font-size: 1.1rem;
   font-weight: bold;
@@ -127,13 +124,13 @@ font-family: 'Monoton', cursive;
   width: 100%;
   overflow: hidden;
   padding-top: 10rem;
-  height: 44rem;
+  height: 60rem;
   text-shadow: 1px 1px 1px #000;
   float: left;
 }
 
 .jumbotron-bike {
-  background-image: url("resources/images/jumbotron-bike.jpg");
+  background-image: url("images/jumbotron-bike.jpg");
 }
 
 
@@ -144,17 +141,16 @@ font-family: 'Monoton', cursive;
   align-content: center;
   margin-top: 11.85rem;
   margin-bottom: 11.85rem;
-  width: 51.3rem;
 }
 
-.banner .quote h1 {
+.jumbotron h1 {
   font-family: 'Monoton', cursive;
   font-size: 7.1rem;
   color: white;
   text-shadow: -1px -1px 0 #000;
 }
 
-.quote a {
+.jumbotron a {
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
 }
@@ -202,7 +198,7 @@ font-family: 'Monoton', cursive;
 }
 
 .image.container {
-
+ overflow: hidden;
 }
 
 
@@ -214,7 +210,7 @@ font-family: 'Monoton', cursive;
   justify-content: flex-start;
 }
 
-.info img {
+img {
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -230,12 +226,26 @@ font-family: 'Monoton', cursive;
   margin-bottom: 5.85rem;
 }
 
+
+
 .projects.container img {
   opacity: 0.5;
   overflow: hidden;
   width: 100%;
+  transition: transform .5s, opacity .5s;
 }
 
+.projects.image.container {
+  height: 13.5rem;
+  overflow: hidden;
+}
+
+.projects.container img:hover {
+  transform: scale(1.13);
+  opacity: 1;
+  width: 100%;
+  overflow: hidden;
+}
 
 /*Projects Projects Section Ends*/
 /*Projects Sectoin Ends */
@@ -249,7 +259,7 @@ font-family: 'Monoton', cursive;
   justify-content: center;
   align-content: center;
   background-color: #f3f3f3;
-  height: 14.4rem;
+
 }
 
 .footer .quote {
@@ -257,5 +267,12 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-width: 51.3rem;
+padding-top: 5.2rem;
+padding-bottom: 5.2rem;
+}
+
+.footer .quote h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
 }
