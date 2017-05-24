@@ -182,13 +182,15 @@ font-family: 'Monoton', cursive;
 
 
 
-.featured.project {
+.featured.projects {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   margin-top: 1.43rem;
   margin-bottom: 5rem;
+  padding-right: 1.01rem;
+  padding-left: 1.01rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -201,6 +203,11 @@ font-family: 'Monoton', cursive;
   display: flex;
   overflow: hidden;
   width: 100%;
+}
+
+.featured-project .image-container {
+  height: 19rem;
+  margin-top: 1.6rem;
 }
 
 
@@ -233,6 +240,7 @@ img {
   .projects.container {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 
