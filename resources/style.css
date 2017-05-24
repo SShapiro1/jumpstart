@@ -6,11 +6,11 @@
 
 /*nav {
   border: 1px solid orange;
-}
+}*/
 
 div {
   border: 1px solid blue;
-}*/
+}
 
 @font-face {
   font-family: 'Open Sans';
@@ -191,14 +191,16 @@ font-family: 'Monoton', cursive;
   margin-bottom: 5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .featured.project {
+    flex-direction: column;
+  }
+}
+
 .featured.project img {
   display: flex;
   overflow: hidden;
   width: 100%;
-}
-
-.image.container {
- overflow: hidden;
 }
 
 
@@ -224,23 +226,31 @@ img {
   flex-direction: row;
   width: 100%;
   margin-bottom: 5.85rem;
+  z-index: 10;
 }
 
+@media only screen and (max-width: 480px) {
+  .projects.container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-
-.projects.container img {
+.image-container img {
   opacity: 0.5;
   overflow: hidden;
   width: 100%;
   transition: transform .5s, opacity .5s;
+  vertical-align: middle;
+  border: 0;
+  height: 13.5rem;
 }
 
-.projects.image.container {
-  height: 13.5rem;
+.image-container {
   overflow: hidden;
 }
 
-.projects.container img:hover {
+.image-container img:hover {
   transform: scale(1.13);
   opacity: 1;
   width: 100%;
