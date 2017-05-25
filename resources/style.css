@@ -114,6 +114,10 @@ font-family: 'Monoton', cursive;
   padding: 0;
 }*/
 
+.slick-slider {
+  display: block;
+}
+
 .jumbotron {
   display: block;
   background-size: cover;
@@ -124,9 +128,8 @@ font-family: 'Monoton', cursive;
   width: 100%;
   overflow: hidden;
   padding-top: 10rem;
-  height: 60rem;
+  height: 44rem;
   text-shadow: 1px 1px 1px #000;
-  float: left;
 }
 
 .background-bike {
