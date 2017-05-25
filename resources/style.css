@@ -129,19 +129,19 @@ font-family: 'Monoton', cursive;
   float: left;
 }
 
-.jumbotron-bike {
+.background-bike {
   background-image: url("images/jumbotron-bike.jpg");
 }
 
-.jumbotron-beer {
+.background-beer {
   background-image: url("images/jumbotron-beer.jpg");
 }
 
-.jumbotron-flowers {
+.background-flowers {
   background-image: url("images/jumbotron-flowers.jpg");
 }
 
-.jumbotron-duffel {
+.background-duffel {
   background-image: url("images/jumbotron-duffel.jpg");
 }
 
