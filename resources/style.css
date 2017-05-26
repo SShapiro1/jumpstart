@@ -1,4 +1,4 @@
-* {
+body {
   font-size: 14px;
   font-family: 'Open Sans';
 
@@ -8,9 +8,10 @@
   border: 1px solid orange;
 }*/
 
-div {
+/*div {
   border: 1px solid blue;
-}
+}*/
+
 
 @font-face {
   font-family: 'Open Sans';
@@ -87,10 +88,17 @@ font-family: 'Monoton', cursive;
   font-family: 'Open Sans';
   font-size: 1.1rem;
   font-weight: bold;
+  color: #ffffff;
 }
 
-.navbar .navbar-default .navbar-nav > .active > a:hover {
-  background-color: red;
+.navbar-default .navbar-nav > .active > a {
+  color: #399bd1;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+  text-shadow: .4px .4px .4px #fff;
   }
 
 
@@ -99,20 +107,18 @@ font-family: 'Monoton', cursive;
  nav img {
    display: none;
  }
+
+ .navbar ul {
+   flex-direction: column;
+ }
+ }
 }
 
 /*End Navigation Section*/
 
 /* Begin Banner Section */
 
-/*.banner.container {
-  display: flex;
-  height: 70rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}*/
+
 
 .slick-slider {
   display: block;
@@ -128,7 +134,7 @@ font-family: 'Monoton', cursive;
   width: 100%;
   overflow: hidden;
   padding-top: 10rem;
-  height: 44rem;
+  height: 64rem;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -182,6 +188,20 @@ font-family: 'Monoton', cursive;
  .btn:active {
   box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
 }
+
+@media only screen and (max-width: 480px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+    padding-top: 8rem;
+    text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .banner.container .quote {
+    margin-bottom: 11.85rem;
+    margin-top: 11.85rem;
+  }
+
+}
 /* End Banner Section */
 
 /*Projects Containter Begins*/
@@ -194,7 +214,10 @@ font-family: 'Monoton', cursive;
 
 
 /* Featured projects section Begins*/
-
+.container h1 {
+  font-weight: bold;
+  color: #399bd1;
+}
 
 
 .featured.projects {
@@ -204,8 +227,7 @@ font-family: 'Monoton', cursive;
   justify-content: space-between;
   margin-top: 1.43rem;
   margin-bottom: 5rem;
-  padding-right: 1.01rem;
-  padding-left: 1.01rem;
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -215,8 +237,9 @@ font-family: 'Monoton', cursive;
 }
 
 .featured.project img {
-  display: flex;
-  overflow: hidden;
+  /*display: flex;
+  overflow: hidden;*/
+  vertical-align: 100%;
   width: 100%;
 }
 
@@ -257,6 +280,16 @@ font-family: 'Monoton', cursive;
     flex-direction: column;
     width: 100%;
   }
+
+  .image-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+.image-container img {
+  height: 13.5rem;
+}
 }
 
 .image-container img {
@@ -266,7 +299,6 @@ font-family: 'Monoton', cursive;
   transition: transform .5s, opacity .5s;
   vertical-align: middle;
   border: 0;
-  height: 13.5rem;
 }
 
 .image-container {
@@ -305,7 +337,7 @@ padding-bottom: 5.2rem;
 }
 
 .footer .quote h1 {
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
   font-weight: bold;
   margin-bottom: 1.4rem;
 }
